@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-1/4 bg-gray-900 text-white h-screen p-4">
+            <div class="p-6">
+                <h1 class="text-xl font-bold">WELCOME</h1>
+                <p class="text-lg">1CG13IS401</p>
+                <img alt="Person sitting on a rock overlooking a sea of clouds" class="mt-4" height="150" src="https://storage.googleapis.com/a1aa/image/d26kla0Q257fXyI3s5BJzaaYptXP56VtvKtiHL92cbgfRssTA.jpg" width="300"/>
+            </div>
+            <div class="relative mb-4">
+                <input type="text" placeholder="Search" class="w-full p-2 rounded bg-gray-800 text-white">
+            </div>
+            <nav>
+                <ul>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-700 rounded">
+                            <i class="fas fa-home mr-2"></i>
+                            DASHBOARD
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-700 rounded">
+                            <i class="fas fa-chart-bar mr-2"></i>
+                            PLACEMENT DRIVES
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-700 rounded">
+                            <i class="fas fa-cogs mr-2"></i>
+                            PREFERENCES
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-700 rounded">
+                            <i class="fas fa-sign-out-alt mr-2"></i>
+                            SIGN OUT
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main Content -->
+        <div class="w-3/4 p-8">
+            <div class="bg-white p-8 rounded shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Preferences</h2>
+                <p class="text-blue-600 mb-6">Update Your Details</p>
+                <form class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block mb-2">First Name</label>
+                        <input type="text" class="w-full p-2 border rounded" placeholder="First Name" value="Ram">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Last Name</label>
+                        <input type="text" class="w-full p-2 border rounded" placeholder="Last Name" value="Laxman">
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2">Phone</label>
+                        <input type="text" class="w-full p-2 border rounded" value="91xxxxxxxxxx">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Email</label>
+                        <input type="email" class="w-full p-2 border rounded" value="abc@example.com">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Date of Birth</label>
+                        <input type="text" class="w-full p-2 border rounded" value="dd-mm-yyyy">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Current Semester</label>
+                        <select class="w-full p-2 border rounded">
+                            <option>Semester</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block mb-2">Branch of Study</label>
+                        <select class="w-full p-2 border rounded">
+                            <option>Branch</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2">Current Backlogs</label>
+                        <input type="text" class="w-full p-2 border rounded">
+                    </div>
+                    <div>
+                        <label class="block mb-2">History of Backlogs</label>
+                        <select class="w-full p-2 border rounded">
+                            <option>Y/N</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block mb-2">Detained Years</label>
+                        <select class="w-full p-2 border rounded">
+                            <option>Years</option>
+                        </select>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block mb-2">Upload your Profile Pic</label>
+                        <input type="file" class="block mb-2">
+                        <p class="text-gray-600">Maximum upload size is 5 MB.</p>
+                    </div>
+                </form>
+                <div class="flex justify-end mt-4">
+                    <button class="bg-teal-500 text-white px-4 py-2 rounded mr-2">ADD</button>
+                    <button class="bg-teal-500 text-white px-4 py-2 rounded mr-2">UPDATE</button>
+                    <button class="bg-teal-500 text-white px-4 py-2 rounded">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
